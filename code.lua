@@ -40,7 +40,7 @@ function meta:newchild(instance, attributes)
 end
  
 function meta:create(instance, attributes)
-    local me = self:new(instance, attributes)
+    local me = self:newchild(instance, attributes)
  
     -- build me
     me:build()
